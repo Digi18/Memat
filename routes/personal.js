@@ -24,7 +24,7 @@ router.get('/personal',(req,res) => {
                                     }
                                     else{
 
-                                    	 let output = result.map(r => ({'img':r.img}));
+                                    	 let output = result.map(r => ({'img':r.img,'title':r.title}));
 
                         	             res.send(output);
                                          client.close();  
